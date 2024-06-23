@@ -1,12 +1,18 @@
 {
-  "name": "sqlite3",
+  "name": "@pingleware/sqlite3",
   "description": "Asynchronous, non-blocking SQLite3 bindings",
   "version": "5.1.7",
-  "homepage": "https://github.com/TryGhost/node-sqlite3",
+  "homepage": "https://github.com/pingleware/node-sqlite3",
   "author": {
     "name": "Mapbox",
     "url": "https://mapbox.com/"
   },
+  "maintainers": [
+    {
+      "name": "PRESSPAGE ENTERTAINMENT INC dba PINGLEWARE <maintainers@pignleware.work>",
+      "url": "https://pingleware.support"
+    }
+  ],
   "binary": {
     "napi_versions": [
       3,
@@ -30,7 +36,8 @@
     "Nathan Rajlich <nathan@tootallnate.net>",
     "AJ ONeal <coolaj86@gmail.com>",
     "Mithgol",
-    "Ben Noordhuis <ben@strongloop.com>"
+    "Ben Noordhuis <ben@strongloop.com>",
+    "PRESSPAGE ENTERTAINMENT INC dba PINGLEWARE <maintainers@pignleware.work>"
   ],
   "files": [
     "binding.gyp",
@@ -41,21 +48,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TryGhost/node-sqlite3.git"
+    "url": "https://github.com/pingleware/node-sqlite3.git"
   },
   "dependencies": {
     "bindings": "^1.5.0",
-    "node-addon-api": "^7.0.0",
-    "prebuild-install": "^7.1.1",
-    "tar": "^6.1.11"
+    "node-addon-api": "^8.0.0",
+    "prebuild-install": "^7.1.2",
+    "tar": "^6.2.1"
   },
   "devDependencies": {
     "eslint": "8.56.0",
     "mocha": "10.2.0",
-    "prebuild": "12.1.0"
+    "prebuild": "^3.0.3"
   },
   "peerDependencies": {
-    "node-gyp": "8.x"
+    "node-gyp": "10.x"
   },
   "peerDependenciesMeta": {
     "node-gyp": {
@@ -63,7 +70,7 @@
     }
   },
   "optionalDependencies": {
-    "node-gyp": "8.x"
+    "node-gyp": "10.x"
   },
   "scripts": {
     "install": "prebuild-install -r napi || node-gyp rebuild",
